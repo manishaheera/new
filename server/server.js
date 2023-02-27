@@ -19,7 +19,10 @@ app.use(cors({
 }))
 
 // NEED TO REQUIRE CONFIG FILES ****************************
+require("./config/mongoose.config")
+
 // NEED TO REQUIRE ROUTES ***********************************
+require("./routes/game.routes")(app)
 
 app.listen(8000, ()=> console.log("You are connected to port 8000"))
 
