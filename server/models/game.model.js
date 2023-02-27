@@ -21,7 +21,7 @@ const GameSchema = new mongoose.Schema({
         required: [true, "Game genre is required, please choose from list"],
         enum: [
             "Action",
-            "Platformer",
+            "Platform",
             "RPG",
             "FPS",
             "RTS",
